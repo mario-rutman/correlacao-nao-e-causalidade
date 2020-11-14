@@ -1,0 +1,55 @@
+---
+title: "Correlação não é causalidade, e daí?"
+author: ""
+date: ""
+output: 
+  html_document:
+    highlight: espresso
+    theme: united
+---
+#### [Mário Rutman](http://lattes.cnpq.br/4148568651932363)
+#### `r format(Sys.Date(), '%d-%b-%Y')`. 
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+## {.tabset .tabset-pills}
+### __1. Objetivo.__
+
+#### Tenho visto em _lives_ ou cursos na internet sobre análise de dados a afirmação de que  'correlação não é causalidade'. E, em geral, desvalorizando um estudo de correlação em razão disto. Como se fosse inferior a causalidade ou algo onde falte a causalidade.
+
+#### É natural a dificuldade que engenheiros, estatísticos e a turma de exatas tenham em tratar da causalidade, pois é um conceito filosófico que não é estudado nestas disciplinas. 
+
+#### Minha argumentação aqui será no sentido de mostrar que da correlação jamais se chega à causa e que, numa perspectiva específica, a causalidade é dispensável.
+
+#### Observo ainda que vou usar o termo causa como sinônimo de motivo, razão ou princípio, tal como no seu uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio. 
+
+
+### __2. Conhecer.__
+
+#### A ideia de causalidade surge já nos primeiros filósofos quando criaram alguns conceitos para responder qual seria a causa da causa da causa... até a causa primeira de todas que chamavam de _arqué_. Para Tales de Mileto era a água, para Anaxímenes era o ar, Anaximandro o [_apeiron_ (sem limites)](https://pt.wikipedia.org/wiki/Anaximandro#A_cosmologia_de_Anaximandro), Demócrito o átomo etc.
+
+#### Conhecer cientificamente __$B$__ é saber inequivocamente tudo que causa __$B$__, seu porquê. Platão chama este tipo de conhecimento [_episteme_](https://pt.wikipedia.org/wiki/Epistemologia) que se opõe à opinião, é o saber permanente contraposto à variabilidade das opinões que mudam na mesma medida do que é captado pelos sentidos. Estes nos afastam do conhecimento, só a razão isolada de todos os sentidos pode conhecer. 
+
+#### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias)  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). 
+
+#### Platão ao desprezar os sentidos como caminho para o conhecimento descredencia também a experiência. É um [racionalista](https://pt.wikipedia.org/wiki/Racionalismo) clássico ao entender que o conhecimento é tanto melhor quanto mais racional, lógico e afastado dos sentidos.
+
+#### Em [Descartes](https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes), é a impossibilidade de duvidar __racionalmente__ de __$B$__ que permitirá dizermos que conhecemos __$B$__, aquilo que o causa, sua razão. 
+
+#### Segundo o filósofo francês, igualmente partilhada por todos, a razão com suas operações, partindo princípios auto evidentes e os encadeando sem deixar espaço para dúvida em todas as etapas do raciocínio, conhece verdadeiramente tudo que causa __$B$__. Esta [forma de conhecer](https://pt.wikipedia.org/wiki/Discurso_sobre_o_M%C3%A9todo#Os_quatro_preceitos) foi inspirada na Matemática. Assim, tal como em Platão, só se chega às causas, ao conhecimento exclusivamente pelo uso da razão, prescindindo da experiência.
+
+#### Para Aristóteles é por meio da experiência dos sentidos que nasce o conhecimento ("Nada está no intelecto sem antes ter passado pelos sentidos"). Em sua concepção, através de uma série de experiências a razão vai aumentando o grau de abstração em relação às características particulares dos objetos e vislumbrando os padrões mais gerais, isto é, chegando ao conhecimento. 
+
+>#### Resumindo - Quer valorize-se ou não a experiência, é por meio da razão que se chega à causa, à explicação. Por ora vamos observar que a experiência pode inspirar o intelecto a encontrar a causa de um conjunto de fenômenos, mas estabelecer sua causa é tarefa intelectual separada, é a articulação de conceitos e princípios que têm por objetivo reunir a diversidade das experiências, dos dados, sob uma mesma ordem.
+
+### __3. Alguns exemplos.__
+
+#### A relação entre os lados de um triângulo retângulo ($a^2 = b^2 + c^2$) pode ser obtida medindo-se diversos triângulos retângulos, mas os erros de medição e de identificação dos triângulos que são retângulos dificilmente nos dará esta relação. E com o agravante de não poder garantir que a igualdade servirá a todos triângulos retângulos. Só uma construção de acordo com as regras da razão pode ter tal generalidade. Entre o conjunto de dados retirado da experiência e a determinação sua causa existe um abismo, são procedimentos heterogêneos, descontínuos entre si.
+
+#### A musa inspiradora ([Helô Pinheiro](https://pt.wikipedia.org/wiki/Hel%C3%B4_Pinheiro)) de Tom Jobim e Vinícius de Morais e a música Garota de Ipanema são duas coisas absolutamente diversas. A música tem uma relação factual com a a garota, mas a Helô poderia passar repetidamente pelos autores sem haver a música ou outras moças poderiam inspirar a música que eternizou Ipanema. A separação entre a experiência e suas causas é a mesma entre a musa e o poema.
+
+#### 
+
+#### 
