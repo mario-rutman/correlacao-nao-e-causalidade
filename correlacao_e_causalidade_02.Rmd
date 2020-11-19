@@ -5,7 +5,7 @@ date: ""
 output: 
   html_document:
     highlight: espresso
-    theme: united
+    theme: spacelab
 ---
 #### [Mário Rutman](http://lattes.cnpq.br/4148568651932363)
 #### `r format(Sys.Date(), '%d-%b-%Y')`. 
@@ -17,32 +17,58 @@ knitr::opts_chunk$set(echo = TRUE)
 ## {.tabset .tabset-pills}
 ### __1. Objetivo.__
 
-#### Tenho visto em _lives_ ou cursos na internet sobre análise de dados a afirmação de que  'correlação não é causalidade'. E, em geral, desvalorizando um estudo de correlação em razão disto. Como se fosse inferior a causalidade ou algo onde falte a causalidade.
+#### Tenho visto em _lives_ ou em cursos de Estatística e Análise de Dados a afirmação de que 'correlação não é causalidade'. Indicando que algo falta à correlação, como se estivesse incompleta sem a causalidade.
 
-#### É natural a dificuldade que engenheiros, estatísticos e a turma de exatas tenham em tratar da causalidade, pois é um conceito filosófico que não é estudado nestas disciplinas. 
+#### Minha argumentação será no sentido de mostrar que um estudo de correlação é uma etapa de um experimento e como tal nada tem a ver com identicar causas. Estudar a correlação entre variáveis e estabelecer as causas que as ligam são trabalhos diferentes, descontínuos entre si. Não podemos exigir que uma análise de correlação faça menção à causalidade, ou achar que é deficiente por não ter revelado ou encontrado causas.
 
-#### Minha argumentação aqui será no sentido de mostrar que da correlação jamais se chega à causa e que, numa perspectiva específica, a causalidade é dispensável.
+#### Toda discussão irá girar em torno do conhecimento por indução. Esta maneira de conceber o que é conhecimento foi amplamente adota pelos chamados filósofos empiristas. Como preparação vou expor em linhas gerais a teoria do conhecimento de pensadores considerados racionalistas. 
 
-#### Observo ainda que vou usar o termo causa como sinônimo de motivo, razão ou princípio, tal como no seu uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio. 
+#### Observo ainda que vou usar o termo __causa__ como sinônimo de motivo, razão ou princípio, tal como no uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio.
 
-
-### __2. Conhecer.__
+### __3. Conhecer para Platão, Aristóteles e Descartes.__
 
 #### A ideia de causalidade surge já nos primeiros filósofos quando criaram alguns conceitos para responder qual seria a causa da causa da causa... até a causa primeira de todas que chamavam de _arqué_. Para Tales de Mileto era a água, para Anaxímenes era o ar, Anaximandro o [_apeiron_ (sem limites)](https://pt.wikipedia.org/wiki/Anaximandro#A_cosmologia_de_Anaximandro), Demócrito o átomo etc.
 
-#### Conhecer cientificamente __$B$__ é saber inequivocamente tudo que causa __$B$__, seu porquê. Platão chama este tipo de conhecimento [_episteme_](https://pt.wikipedia.org/wiki/Epistemologia) que se opõe à opinião, é o saber permanente contraposto à variabilidade das opinões que mudam na mesma medida do que é captado pelos sentidos. Estes nos afastam do conhecimento, só a razão isolada de todos os sentidos pode conhecer. 
+#### Conhecer cientificamente __$B$__ é saber inequivocamente tudo que causa __$B$__, seu porquê. Platão chama este tipo de conhecimento de [_episteme_](https://pt.wikipedia.org/wiki/Epistemologia). É o saber permanente contraposto à variabilidade das opinões que mudam na mesma medida do que é captado pelos sentidos. Estes nos afastam do conhecimento, só a razão isolada de todos os sentidos pode conhecer. 
 
-#### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias)  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). 
+#### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias)  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). Daí que a alma encarnada nada conhece de novo, apenas relembra uma coisa outra no mar de esquecimento [_lethe_](https://en.wikipedia.org/wiki/Lethe) em que vive. 
 
-#### Platão ao desprezar os sentidos como caminho para o conhecimento descredencia também a experiência. É um [racionalista](https://pt.wikipedia.org/wiki/Racionalismo) clássico ao entender que o conhecimento é tanto melhor quanto mais racional, lógico e afastado dos sentidos.
+#### É impensável para Platão que o conhecimento tenha alguma relação com a análise de um conjunto de observaçãoes ou experimento. A valorização de Matemática em sua filosofia é em razão da distância que esta disciplina mantém em relação aos sentidos.   
 
-#### Em [Descartes](https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes), é a impossibilidade de duvidar __racionalmente__ de __$B$__ que permitirá dizermos que conhecemos __$B$__, aquilo que o causa, sua razão. 
+#### Para [Descartes](https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes) conhecer __$B$__ é a impossibilidade de duvidar __racionalmente__ de __$B$__. 
 
 #### Segundo o filósofo francês, igualmente partilhada por todos, a razão com suas operações, partindo princípios auto evidentes e os encadeando sem deixar espaço para dúvida em todas as etapas do raciocínio, conhece verdadeiramente tudo que causa __$B$__. Esta [forma de conhecer](https://pt.wikipedia.org/wiki/Discurso_sobre_o_M%C3%A9todo#Os_quatro_preceitos) foi inspirada na Matemática. Assim, tal como em Platão, só se chega às causas, ao conhecimento exclusivamente pelo uso da razão, prescindindo da experiência.
 
 #### Para Aristóteles é por meio da experiência dos sentidos que nasce o conhecimento ("Nada está no intelecto sem antes ter passado pelos sentidos"). Em sua concepção, através de uma série de experiências a razão vai aumentando o grau de abstração em relação às características particulares dos objetos e vislumbrando os padrões mais gerais, isto é, chegando ao conhecimento. 
 
->#### Resumindo - Quer valorize-se ou não a experiência, é por meio da razão que se chega à causa, à explicação. Por ora vamos observar que a experiência pode inspirar o intelecto a encontrar a causa de um conjunto de fenômenos, mas estabelecer sua causa é tarefa intelectual separada, é a articulação de conceitos e princípios que têm por objetivo reunir a diversidade das experiências, dos dados, sob uma mesma ordem.
+>#### __Resumindo__ - Quer valorize-se ou não a experiência, é por meio da razão que se chega à causa, à explicação. Por ora vamos observar que a experiência pode inspirar o cientista a identificar um candidato a causa de um conjunto de fenômenos, mas estabelecer sua causa é tarefa intelectual separada, é a articulação de conceitos e princípios que têm por objetivo reunir a diversidade das experiências, dos dados, sob uma mesma ordem.
+
+### __2. Experiência.__
+
+#### Um estudo de correlação numa análise de dados é uma etapa de uma experiência. Coletam-se as observações, nomeiam-se as variáveis e estuda-se __quanto__ estas se correlacionam. Não se trata de atividade especulativa ou teórica.
+
+#### Chamo a atenção disto para sinalizar que um analista de dados que faz uma correlação não pode desprezar o valor da experiência, do contrário estaria negando a própria função que exerce. Via de regra, um analista de dados deve adotar a posição filosófica do empirismo onde a experiência é guia e critério de validade do conhecimento.
+
+
+### __4. Empirismo.__
+
+#### Desenvolveu-se principalmente entre filóssofos de língua inglesa a partir do séc. XVI. Neste estudo abordarei [Francis Bacon](https://en.wikipedia.org/wiki/Francis_Bacon), [John Locke](https://en.wikipedia.org/wiki/John_Locke) e [David Hume](https://en.wikipedia.org/wiki/David_Hume). 
+
+#### Para Bacon o conhecimento científico se processa pelo método indutivo. A partir de uma coleção de observações depreende-se uma relação entre elas. Os fenômenos ocorridos num conjunto suficiente de observações são generalizados. Tal método pressupõe uma uniformidade ou semelhança entre o que já foi observado e as próximas observações.
+
+###### "Geralmente pensamos que as observações que fazemos são capazes de justificar algumas expectativas ou previsões sobre observações que ainda não fizemos, bem como afirmações gerais que vão além do observado. Por exemplo, a observação de que o pão de certa aparência tem sido nutritivo até agora parece justificar a expectativa de que o próximo pedaço de pão semelhante que como também seja nutritivo, bem como a alegação de que o pão desse tipo geralmente é nutritivo. Essas inferências do observado para o não observado, ou para leis gerais, são conhecidas como “inferências indutivas”. [O Problema da Indução](https://plato.stanford.edu/entries/induction-problem/#HumeProb).
+
+#### O Princípio da Uniformidade ou Semelhança é indispensável, pois do contrário deveríamos desistir de qualquer tipo de conhecimento, mas o conhecimento por indução não pode ser comparado em generalidade àqueles da Matemática quando mostra que num triângulo retângulo $a^2 = b + c^2$ ou que $\sqrt{2}$ não pode ser escrito na forma $\frac{p}{q}$ para $p$ e $q$ inteiros. Em comparação com o conhecimento do tipo da Matemática a indução é problemática, pois sempre ficará a possibilidade de um contra exemplo que pode colocar em questão o conhecimento.
+
+#### John Locke 
+
+
+
+
+
+
+###### Locke, em seu 'Ensaio acerca do entendimento humano' afirma “é de grande utilidade para o marinheiro saber a extensão de sua linha, embora não possa com ela sondar toda a profundidade do oceano. É conveniente que saiba que ela é suficientemente longa para alcançar o fundo dos lugares necessários para orientar sua viagem, e preveni-lo de esbarrar contra escolhos que podem destruí-lo. Não nos diz respeito conhecer todas as coisas, mas apenas as que se referem à nossa conduta. Se pudermos descobrir aquelas medidas por meio das quais uma criatura racional, posta nesta situação do homem no mundo, pode e deve dirigir suas opiniões e ações delas dependentes, não devemos nos molestar porque outras coisas escapam ao nosso conhecimento” 
+
 
 ### __3. Alguns exemplos.__
 
