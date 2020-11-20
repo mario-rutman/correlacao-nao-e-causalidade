@@ -17,11 +17,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ## {.tabset .tabset-pills}
 ### __1. Objetivo.__
 
-#### Tenho visto em _lives_ ou em cursos de Estatística e Análise de Dados a afirmação de que 'correlação não é causalidade'. Indicando que algo falta à correlação, como se estivesse incompleta sem a causalidade.
+#### Tenho visto em _lives_ ou em cursos de Estatística e Análise de Dados a afirmação de que 'correlação não é causalidade', como que indicando que algo falta à correlação, como se estivesse incompleta sem a causalidade. Não penso assim.
 
-#### Minha argumentação será no sentido de mostrar que um estudo de correlação é uma etapa de um experimento e como tal nada tem a ver com identicar causas. Estudar a correlação entre variáveis e estabelecer as causas que as ligam são trabalhos diferentes, descontínuos entre si. Não podemos exigir que uma análise de correlação faça menção à causalidade, ou achar que é deficiente por não ter revelado ou encontrado causas.
+#### Minha argumentação será no sentido de mostrar que um estudo de correlação é uma etapa de um experimento e como tal nada tem a ver com identificar causas. Estudar a correlação entre variáveis e estabelecer as causas que as ligam são trabalhos diferentes, descontínuos entre si. Não devemos exigir que uma análise de correlação faça menção à causalidade, ou achar que é deficiente por não ter revelado ou encontrado causas.
 
-#### Toda discussão irá girar em torno do conhecimento por indução. Esta maneira de conceber o que é conhecimento foi amplamente adota pelos chamados filósofos empiristas. Como preparação vou expor em linhas gerais a teoria do conhecimento de pensadores considerados racionalistas. 
+#### Toda discussão irá girar em torno do conhecimento por indução. Esta maneira de conceber o que é conhecimento foi adota pelos chamados filósofos empiristas. Como preparação vou expor em linhas gerais a teoria do conhecimento de pensadores considerados racionalistas, que não acreditavam que a experiência poderia levar ao conhecimento. 
 
 #### Observo ainda que vou usar o termo __causa__ como sinônimo de motivo, razão ou princípio, tal como no uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio.
 
@@ -29,36 +29,62 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### A ideia de causalidade surge já nos primeiros filósofos quando criaram alguns conceitos para responder qual seria a causa da causa da causa... até a causa primeira de todas que chamavam de _arqué_. Para Tales de Mileto era a água, para Anaxímenes era o ar, Anaximandro o [_apeiron_ (sem limites)](https://pt.wikipedia.org/wiki/Anaximandro#A_cosmologia_de_Anaximandro), Demócrito o átomo etc.
 
-#### Conhecer cientificamente __$B$__ é saber inequivocamente tudo que causa __$B$__, seu porquê. Platão chama este tipo de conhecimento de [_episteme_](https://pt.wikipedia.org/wiki/Epistemologia). É o saber permanente contraposto à variabilidade das opinões que mudam na mesma medida do que é captado pelos sentidos. Estes nos afastam do conhecimento, só a razão isolada de todos os sentidos pode conhecer. 
+#### Conhecer cientificamente __$B$__ é saber inequivocamente tudo que causa __$B$__, seu porquê. Platão chama este tipo de conhecimento de [_episteme_](https://pt.wikipedia.org/wiki/Epistemologia). É o saber permanente contraposto à variabilidade das opinões que mudam na mesma medida que se alteram os objetos captados pelos sentidos. Estes nos afastam do conhecimento, só a razão isolada de todos os sentidos pode conhecer. 
 
-#### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias)  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). Daí que a alma encarnada nada conhece de novo, apenas relembra uma coisa outra no mar de esquecimento [_lethe_](https://en.wikipedia.org/wiki/Lethe) em que vive. 
+#### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), Platão explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias)  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). Para este filósofo a alma encarnada nada conhece de novo, apenas relembra uma coisa outra no mar do esquecimento [_lethe_](https://en.wikipedia.org/wiki/Lethe) em que vive. 
 
-#### É impensável para Platão que o conhecimento tenha alguma relação com a análise de um conjunto de observaçãoes ou experimento. A valorização de Matemática em sua filosofia é em razão da distância que esta disciplina mantém em relação aos sentidos.   
+#### É impensável para Platão que o conhecimento tenha alguma relação com a análise de um conjunto de observaçãoes ou experimento. A valorização de Matemática em sua filosofia é em razão da distância que esta disciplina mantém em relação aos sentidos.
+
+#### Aristóteles entende que o que existe são as coisas individuais (não as formas ou essências em um mundo à parte como Platão), este cavalo, esta mesa.  E será o intelecto, por meio da abstração, que irá depreender a essência das coisas particulares, o que faz com que isto seja um cavalo e não uma mesa.
+
+#### Para Aristóteles a experiência tem algum valor ("Nada está no intelecto sem antes ter passado pelos sentidos") no processo de conhecimento, mas é apenas uma referência, uma inspiração, o conhecimento é resultado do trabalho do intelecto. 
 
 #### Para [Descartes](https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes) conhecer __$B$__ é a impossibilidade de duvidar __racionalmente__ de __$B$__. 
 
-#### Segundo o filósofo francês, igualmente partilhada por todos, a razão com suas operações, partindo princípios auto evidentes e os encadeando sem deixar espaço para dúvida em todas as etapas do raciocínio, conhece verdadeiramente tudo que causa __$B$__. Esta [forma de conhecer](https://pt.wikipedia.org/wiki/Discurso_sobre_o_M%C3%A9todo#Os_quatro_preceitos) foi inspirada na Matemática. Assim, tal como em Platão, só se chega às causas, ao conhecimento exclusivamente pelo uso da razão, prescindindo da experiência.
+#### Segundo o filósofo francês, a razão (igualmente partilhada por todos) com suas operações, partindo princípios auto evidentes e os encadeando sem deixar espaço para dúvida em todas as etapas do raciocínio, conhece verdadeiramente tudo que causa __$B$__. Esta [forma de conhecer](https://pt.wikipedia.org/wiki/Discurso_sobre_o_M%C3%A9todo#Os_quatro_preceitos) foi inspirada na Matemática. 
 
-#### Para Aristóteles é por meio da experiência dos sentidos que nasce o conhecimento ("Nada está no intelecto sem antes ter passado pelos sentidos"). Em sua concepção, através de uma série de experiências a razão vai aumentando o grau de abstração em relação às características particulares dos objetos e vislumbrando os padrões mais gerais, isto é, chegando ao conhecimento. 
+|                   "...rejeitamos todos conhecimentos somente prováveis, e declaramos que se 
+|                   deve confiar apenas nas coisas perfeitamentes conhecidas e das quais 
+|                   não se pode duvidar [...] podemos obter opiniões prováveis, mas não a 
+|                   ciência perfeita [...] só a Aritmética e a Geometria estavam isentas de 
+|                   todo defeito de falsidade ou de incerteza [...] É preciso notar, além disso,
+|                   que as experiências acerca das coisas são muitas vezes enganosas [...] 
+|                   De tais considerações infere-se claramente porque é que a Aritmética e a 
+|                   Geometria são muito mais certas que as outras disciplinas: são efectivamente
+|                   as únicas que lidam com um objeto tão puro e simples que não têm de fazer 
+|                   suposição alguma que a experiência torne incerta..."[^1]
+[^1]: Descartes, René. __Regras para a Direcção do Espírito (Regra II)__. Lisboa: Edições 70, s/d, pgs 14 a 17.
 
->#### __Resumindo__ - Quer valorize-se ou não a experiência, é por meio da razão que se chega à causa, à explicação. Por ora vamos observar que a experiência pode inspirar o cientista a identificar um candidato a causa de um conjunto de fenômenos, mas estabelecer sua causa é tarefa intelectual separada, é a articulação de conceitos e princípios que têm por objetivo reunir a diversidade das experiências, dos dados, sob uma mesma ordem.
+#### Para Descartes conhecer é conhecer à moda da Matemática, que rejeita o provável e as experiências muitas vezes enganosas.  
+
+
+>#### __Resumindo__ - Quer estes filósofos considerem ou desprezem a experiência, é por meio da razão que se chega à causa, à explicação. Por ora vamos observar que a experiência pode inspirar o cientista a identificar um candidato a causa ou explicação de um conjunto de fenômenos, mas estabelecer sua causa é tarefa intelectual separada, é a articulação de conceitos e princípios que reunem a diversidade das experiências, dos dados, sob uma mesma ordem.
 
 ### __2. Experiência.__
 
 #### Um estudo de correlação numa análise de dados é uma etapa de uma experiência. Coletam-se as observações, nomeiam-se as variáveis e estuda-se __quanto__ estas se correlacionam. Não se trata de atividade especulativa ou teórica.
 
-#### Chamo a atenção disto para sinalizar que um analista de dados que faz uma correlação não pode desprezar o valor da experiência, do contrário estaria negando a própria função que exerce. Via de regra, um analista de dados deve adotar a posição filosófica do empirismo onde a experiência é guia e critério de validade do conhecimento.
+#### Chamo a atenção disto para sinalizar que um analista de dados que faz uma correlação não pode desprezar o valor da experiência, do contrário estaria negando a própria função que exerce. Via de regra, um analista de dados deve adotar a posição filosófica do empirismo onde a experiência é guia e critério de validade do conhecimento e a __indução__ o modo de obtê-lo.
 
 
 ### __4. Empirismo.__
 
-#### Desenvolveu-se principalmente entre filóssofos de língua inglesa a partir do séc. XVI. Neste estudo abordarei [Francis Bacon](https://en.wikipedia.org/wiki/Francis_Bacon), [John Locke](https://en.wikipedia.org/wiki/John_Locke) e [David Hume](https://en.wikipedia.org/wiki/David_Hume). 
+#### Desenvolveu-se principalmente entre filóssofos de língua inglesa a partir do séc. XVI. Neste estudo farei referências a [Francis Bacon](https://en.wikipedia.org/wiki/Francis_Bacon), [John Locke](https://en.wikipedia.org/wiki/John_Locke) e [David Hume](https://en.wikipedia.org/wiki/David_Hume). 
 
-#### Para Bacon o conhecimento científico se processa pelo método indutivo. A partir de uma coleção de observações depreende-se uma relação entre elas. Os fenômenos ocorridos num conjunto suficiente de observações são generalizados. Tal método pressupõe uma uniformidade ou semelhança entre o que já foi observado e as próximas observações.
+#### Para Bacon o conhecimento científico se processa pelo método indutivo. A partir de uma coleção de observações infere-se uma relação entre elas. Os fenômenos ocorridos num conjunto de observações são generalizados. Tal extrapolação pressupõe uma uniformidade ou semelhança entre o que já foi observado e o que ainda será.
 
-###### "Geralmente pensamos que as observações que fazemos são capazes de justificar algumas expectativas ou previsões sobre observações que ainda não fizemos, bem como afirmações gerais que vão além do observado. Por exemplo, a observação de que o pão de certa aparência tem sido nutritivo até agora parece justificar a expectativa de que o próximo pedaço de pão semelhante que como também seja nutritivo, bem como a alegação de que o pão desse tipo geralmente é nutritivo. Essas inferências do observado para o não observado, ou para leis gerais, são conhecidas como “inferências indutivas”. [O Problema da Indução](https://plato.stanford.edu/entries/induction-problem/#HumeProb).
+|                  "Geralmente pensamos que as observações que fazemos são capazes de justificar
+|                  algumas expectativas ou previsões sobre observações que ainda não fizemos,
+|                  bem como afirmações gerais que vão além do observado. Por exemplo, a observação
+|                  de que o pão de certa aparência tem sido nutritivo até agora parece justificar a
+|                  expectativa de que o próximo pedaço de pão semelhante que como também seja nutritivo,
+|                  bem como a alegação de que o pão desse tipo geralmente é nutritivo. Essas inferências
+|                  do observado para o não observado, ou para leis gerais, são conhecidas como
+|                  “inferências indutivas”. [O Problema da Indução](https://plato.stanford.edu/entries/induction-problem/#HumeProb).
 
-#### O Princípio da Uniformidade ou Semelhança é indispensável, pois do contrário deveríamos desistir de qualquer tipo de conhecimento, mas o conhecimento por indução não pode ser comparado em generalidade àqueles da Matemática quando mostra que num triângulo retângulo $a^2 = b + c^2$ ou que $\sqrt{2}$ não pode ser escrito na forma $\frac{p}{q}$ para $p$ e $q$ inteiros. Em comparação com o conhecimento do tipo da Matemática a indução é problemática, pois sempre ficará a possibilidade de um contra exemplo que pode colocar em questão o conhecimento.
+#### O Princípio da Uniformidade ou Semelhança é basilar, pois do contrário deveríamos desistir de qualquer tipo de conhecimento, mas o conhecimento por indução não pode ser comparado em generalidade àqueles da Matemática quando mostra que num triângulo retângulo $a^2 = b + c^2$ (a soma dos quasrados dos catetos é igual ao quadrado da hipotenusa)  ou que $\sqrt{2}$ não pode ser escrito na forma $\frac{p}{q}$ para $p$ e $q$ inteiros. Em comparação com o conhecimento do tipo da Matemática a indução é problemática, pois sempre haverá a sombra da possibilidade de um contraexemplo que colocaria em questão o referido conhecimento.
+
+#### 
 
 #### John Locke 
 
@@ -78,4 +104,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### 
 
-#### 
+
