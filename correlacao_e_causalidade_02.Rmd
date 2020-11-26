@@ -19,13 +19,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Tenho visto em _lives_ ou em cursos de Estatística e Análise de Dados a afirmação de que 'correlação não é causalidade', como que indicando que algo falta à correlação, como se estivesse incompleta sem a causalidade. Não penso assim.
 
-#### Minha argumentação será no sentido de mostrar que um estudo de correlação é uma etapa de um experimento e como tal nada tem a ver com identificar causas. Estudar a correlação entre variáveis e estabelecer as causas que as ligam são trabalhos diferentes, descontínuos entre si. Não devemos exigir que uma análise de correlação faça menção à causalidade, ou achar que é deficiente por não ter revelado ou encontrado causas.
+#### Minha argumentação será no sentido de mostrar que um estudo de correlação não tem necessariamente que  identificar causas. Estudar a correlação entre variáveis e estabelecer as causas que as ligam são trabalhos diferentes, descontínuos entre si. Não devemos exigir que uma análise de correlação faça menção à causalidade, ou achar que é deficiente por não ter revelado ou encontrado causas.
 
 #### Toda discussão irá girar em torno do conhecimento por indução. Esta maneira de conceber o que é conhecimento foi adota pelos chamados filósofos empiristas. Como preparação vou expor em linhas gerais a teoria do conhecimento de pensadores considerados racionalistas, que não acreditavam que a experiência poderia levar ao conhecimento. 
 
-#### Observo ainda que vou usar o termo __causa__ como sinônimo de motivo, razão ou princípio, tal como no uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio.
+#### Vou usar o termo __causa__ como sinônimo de motivo, razão ou princípio, tal como no uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio.
 
-### __3. Conhecer para Platão, Aristóteles e Descartes.__
+#### Adotarei como base de análise o livro "Iniciação à História da Filosofia" de Danilo Marcondes.^[Marcondes, Danilo. __Iniciação à Historia de Filosofia__. Rio de Janeiro: Jorge Zahar Ed., 1998.] 
+
+#### Noto por fim que não há qualquer pretensão acadêmica no presente ensaio.
+
+### __2. Conhecer para Platão, Aristóteles e Descartes.__
 
 #### A ideia de causalidade surge já nos primeiros filósofos quando criaram alguns conceitos para responder qual seria a causa da causa da causa... até a causa primeira de todas que chamavam de _arqué_. Para Tales de Mileto era a água, para Anaxímenes era o ar, Anaximandro o [_apeiron_ (sem limites)](https://pt.wikipedia.org/wiki/Anaximandro#A_cosmologia_de_Anaximandro), Demócrito o átomo etc.
 
@@ -52,55 +56,166 @@ knitr::opts_chunk$set(echo = TRUE)
 |                   De tais considerações infere-se claramente porque é que a Aritmética e a 
 |                   Geometria são muito mais certas que as outras disciplinas: são efectivamente
 |                   as únicas que lidam com um objeto tão puro e simples que não têm de fazer 
-|                   suposição alguma que a experiência torne incerta..."[^1]
-[^1]: Descartes, René. __Regras para a Direcção do Espírito (Regra II)__. Lisboa: Edições 70, s/d, pgs 14 a 17.
+|                   suposição alguma que a experiência torne incerta..."^[Descartes, René. __Regras para a Direcção do Espírito (Regra II)__. Lisboa: Edições 70, s/d, pgs 14 a 17.]
 
-#### Para Descartes conhecer é conhecer à moda da Matemática, que rejeita o provável e as experiências muitas vezes enganosas.  
+#### Para Descartes conhecer é conduzir a razão à moda da Matemática, isto é rejeitar o provável e as experiências enganosas, e considerar somente aquilo que é impossível duvidar.  
 
 
->#### __Resumindo__ - Quer estes filósofos considerem ou desprezem a experiência, é por meio da razão que se chega à causa, à explicação. Por ora vamos observar que a experiência pode inspirar o cientista a identificar um candidato a causa ou explicação de um conjunto de fenômenos, mas estabelecer sua causa é tarefa intelectual separada, é a articulação de conceitos e princípios que reunem a diversidade das experiências, dos dados, sob uma mesma ordem.
+>#### Quer estes filósofos considerem ou desprezem a experiência, é por meio da razão que se chega à causa, à explicação. É o intelecto que articula conceitos e princípios para reunir a diversidade das observações e dados sob uma mesma ordem.
 
-### __2. Experiência.__
+### __3. O analista de dados é um empirista.__
 
-#### Um estudo de correlação numa análise de dados é uma etapa de uma experiência. Coletam-se as observações, nomeiam-se as variáveis e estuda-se __quanto__ estas se correlacionam. Não se trata de atividade especulativa ou teórica.
+#### Quer um analista de dados reflita ou não sobre o tema do conhecimento, seu comportamento pressupõe uma determinada concepção sobre _o que é_ conhecer e _como_ se conhece. Considerando que a base de seu trabalho é coleta e análise de observações, ele é um empirista, uma vez que para esta corrente de pensamento a experiência é guia e critério de validade do conhecimento e a __indução__ o modo de obtê-lo.
 
-#### Chamo a atenção disto para sinalizar que um analista de dados que faz uma correlação não pode desprezar o valor da experiência, do contrário estaria negando a própria função que exerce. Via de regra, um analista de dados deve adotar a posição filosófica do empirismo onde a experiência é guia e critério de validade do conhecimento e a __indução__ o modo de obtê-lo.
+#### Não é possível vislumbrar um analista de dados tomando o conhecimento como reminiscência do que a alma '_viu_' no mundo das idéias, tal como Platão entendia. Nem como Descartes concebia, visto que toda medida contem um erro e as análises estatísticas são sempre da ordem do provável, nunca do indubitável. Um analista de dados que negasse o valor da experiência estaria pondo em questão a própria função que exerce.  
+
+#### Um estudo de correlação numa análise de dados é uma etapa de uma experiência. Coletam-se as observações, identificam-se as variáveis e estuda-se __quanto__ estas se correlacionam. A forma de se obter o grau de uma correlação é bastante engenhoso, mas é somente uma contagem, não é atividade especulativa ou teórica. Na medida em que sua fonte principal são observações, o analista de dados será sempre um empirista. 
 
 
 ### __4. Empirismo.__
 
-#### Desenvolveu-se principalmente entre filóssofos de língua inglesa a partir do séc. XVI. Neste estudo farei referências a [Francis Bacon](https://en.wikipedia.org/wiki/Francis_Bacon), [John Locke](https://en.wikipedia.org/wiki/John_Locke) e [David Hume](https://en.wikipedia.org/wiki/David_Hume). 
+|                   "Em linhas gerais, "empirismo" significa uma posição filosófica que toma
+|                   a experiência como como guia e critério de validade de suas afirmações,
+|                   sobretudo nos campos da teoria do conhecimento e da filosofia da ciência.
+|                   O termo é derivado do grego _empeiria_, significando basicamente uma forma 
+|                   de saber derivado da experiência sensível e de dados acumulados com base nessa
+|                   experiência, permitindo a realização de fins práticos."^[Marcondes, Danilo. __Iniciação à Historia de Filosofia__. pg. 176.]
 
-#### Para Bacon o conhecimento científico se processa pelo método indutivo. A partir de uma coleção de observações infere-se uma relação entre elas. Os fenômenos ocorridos num conjunto de observações são generalizados. Tal extrapolação pressupõe uma uniformidade ou semelhança entre o que já foi observado e o que ainda será.
+
+
+#### Para [Francis Bacon](https://en.wikipedia.org/wiki/Francis_Bacon) o conhecimento científico se processa pelo método indutivo. A partir de uma coleção de observações infere-se uma relação entre elas. Os fenômenos ocorridos num conjunto de observações são generalizados. Tal extrapolação pressupõe uma [uniformidade](https://en.wikipedia.org/wiki/David_Hume#Induction_and_causation) (Princípio da Uniformidade ou Semelhança ou Princípio da Uniformidade da Natureza) entre o que já foi observado e o que não foi. 
 
 |                  "Geralmente pensamos que as observações que fazemos são capazes de justificar
 |                  algumas expectativas ou previsões sobre observações que ainda não fizemos,
 |                  bem como afirmações gerais que vão além do observado. Por exemplo, a observação
 |                  de que o pão de certa aparência tem sido nutritivo até agora parece justificar a
 |                  expectativa de que o próximo pedaço de pão semelhante que como também seja nutritivo,
-|                  bem como a alegação de que o pão desse tipo geralmente é nutritivo. Essas inferências
+|                  tal qual a alegação de que o pão desse tipo geralmente é nutritivo. Essas inferências
 |                  do observado para o não observado, ou para leis gerais, são conhecidas como
 |                  “inferências indutivas”. [O Problema da Indução](https://plato.stanford.edu/entries/induction-problem/#HumeProb).
 
-#### O Princípio da Uniformidade ou Semelhança é basilar, pois do contrário deveríamos desistir de qualquer tipo de conhecimento, mas o conhecimento por indução não pode ser comparado em generalidade àqueles da Matemática quando mostra que num triângulo retângulo $a^2 = b + c^2$ (a soma dos quasrados dos catetos é igual ao quadrado da hipotenusa)  ou que $\sqrt{2}$ não pode ser escrito na forma $\frac{p}{q}$ para $p$ e $q$ inteiros. Em comparação com o conhecimento do tipo da Matemática a indução é problemática, pois sempre haverá a sombra da possibilidade de um contraexemplo que colocaria em questão o referido conhecimento.
+#### Este princípio que sustenta a indução é um problema. Adotá-lo significa usar algo sem fundamento: o que garante esta uniformidade? Por outro lado negá-lo impossibilita o próprio conhecimento, posto que as observações tornam-se um conjunto de casos aleatórios e desconexos. Assim, o empirismo vem sempre acompanhado de um nível de [ceticismo](https://en.wikipedia.org/wiki/Skepticism), seja ele moderado ou radical.
 
-#### 
+#### O ceticismo em [John Locke](https://en.wikipedia.org/wiki/John_Locke) é moderado, pois admite o tipo de conhecimento dedutivo, tal como o da matemática, mas o obtido pela observação e experiência é relativo, chama de crença ou opinião.
 
-#### John Locke 
+|                   "Locke afirma que não podemos conhecer as coisas em sua essência; portanto sobre
+|                   o mundo natural temos apenas crenças opiniões,  mas não conhecimento verdadeiro
+|                   (_true knowledge_). Sob esse aspecto Locke pode ser considerado um cético moderado.
+|                   O conhecimento demonstrativo é aquele derivado da nossa percepção da relação entre
+|                   nossas idéias, restringindo-se a campos do saber como a Geometria. Podemos 
+|                   assim ter um conhecimento demonstrativo ou dedutivo que não é derivado da experiência,
+|                   mas da observação do modo de operar da mente.Este conhecimento (_knowledge_)é certo e 
+|                   definitivo e se distingue do conhecimento derivado das percepções sensíveis que 
+|                   Locke de denomina "crença" ou "opinião" (_belief_) e que é relativa essa experiência."^[Marcondes, Danilo. __Iniciação à Historia da Filosofia__. pg. 181.]
+
+#### O ceticismo moderado de Locke tem um caráter antiespeculativo, prático, uma vez que não se detém diante do que não compreende. A tomada de decisão não pode esperar pelo completo conhecimento das causas, por uma teoria estabelecida. O filósofo observa: 
+
+|                    "É de grande utilidade para o marinheiro saber a extensão de sua sonda, 
+|                    embora não possa com ela medir toda a profundidade do oceano. É conveniente que saiba
+|                    que ela é suficientemente longa para alcançar o fundo dos lugares necessários para
+|                    orientar sua viagem, e preveni-lo de esbarrar contra recifes que podem destruí-lo.[...]
+|                    Não nos diz respeito conhecer todas as coisas, mas apenas as que se referem à nossa
+|                    conduta. Se pudermos descobrir aquelas medidas por meio das quais uma criatura racional,
+|                    posta nesta situação do homem no mundo, pode e deve dirigir suas opiniões e ações delas
+|                    dependentes, não devemos nos molestar por que outras coisas escapam ao nosso conhecimento”.^[John Locke, Ensaio sobre o entendimento humano, tr. Eduardo Abranches de Soveral. Lisboa: Fundação Calouste Gulbenkian, 1999, p. 26.] 
+
+#### Suponhamos um analista de dados que pense como Locke e após seus estudos tivesse descoberto uma correlação de 90% entre __$A$__ e __$B$__, mas que não houvesse nada em __$A$__ que pudesse ser chamado de __causa__ de __$B$__. Ele lamentaria sua situação? Claro que não. É um percentual bastante alto, é o que temos hoje e encontrar a verdadeira causa de __$B$__ pode ser bastante demorado.
+
+#### _A contrario sensu_ imaginemos que um ganhador do Prêmio Nobel tenha descoberto que __$C$__ é a __causa__ de __$B$__, mas nosso analista observou que seu grau de correlaçao é de 70%, portanto menor que o entre __$A$__ e __$B$__(90%). Qual que usaria como fator de predição? Considerando que o referido analista segue a filosofia de Locke, que não tem veleidades metafísicas, usaria __$A$__.
+
+#### Por exemplo, se sou um investidor e observo uma correlação de 90% entre __$DCDD$__^[Dia em que estou com dor de dente.] e valorização de minha carteira e de 70% entre __$APDO$__^[Aumento da procura e diminuição da oferta.], posso sem qualquer problema de consciência optar por __$DCDD$__ para tomar decisões quanto a meus meus ativos^[Evidentemente um analista de mercado profissional, que administre o patrimônio de terceiros, jamais poderá dizer isso.] 
+
+#### Temos que considerar que um dos contextos de uma análise de correlação é uma pesquisa científica e evidentemente se está em busca de causas. Antes de o cientista fazer um estudo ele tem em mente alguns candidatos a causa. Neste cenário ele não pode aceitar __$X$__ como causa se não tem a menor lógica, apenas porque tem uma alta correlação. Mas isto não significa que todo estudo de correlação terá que referir-se a uma causa.
+
+#### A a experiência pode até __inspirar__ o intelecto do cientista a criar uma teoria que revelará uma relação de causalidade, tal como se diz que a queda da maçã levou [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton#A_queda_da_ma%C3%A7%C3%A3_e_a_d%C3%BAvida_de_Newton) a estabelecer a Teoria da Gravitação. Mas o que demonstra causas é tarefa exclusivamente racional de criação e articulação de conceitos. Mesmo que seja um empirista, que toma a experiência como guia, a teoria, o encontro com as causas não emerge naturalmente de uma coleção de experiências, tal como uma radiografia mostra um osso.
+
+### __5. Hume.__ 
+
+#### [David Hume](https://en.wikipedia.org/wiki/David_Hume), o mais radical dos empiristas coloca em xeque o próprio conceito de causalidade.
+
+|                   "Hume questiona a realidade objetiva desse princípio causal. De fato,
+|                   se observarmos, no exemplo famoso, o movimento das bolas de bilhar em uma mesa,
+|                   tudo o que vemos é o impacto do taco sobre a primeira bola e,
+|                   por sua vez o impacto da primeira sobre a segunda, 
+|                   mas a causalidade propriamente dita não pode ser observada. Tudo o que a
+|                   a experiência nos revela é uma conjunção constante entre fenômenos,
+|                   e não uma conexão necessária que chamamos de causalidade."^[Marcondes, Danilo. __Iniciação à Historia da Filosofia__. pg. 182.]
+
+#### O filósofo escocês considera a causalidade um ilusão, uma força do hábito que adquirimos ao ver repetidamente grupo coisas semelhantes seguidas por outro grupo de coisas semelhantes.
+
+|                   "Objetos semelhantes sempre se encontram em conexão com objetos semelhantes.
+|                   Disso temos experiência. De acordo com essa experiência podemos definir uma
+|                   causa como objeto seguido de outro, de tal forma que todos os objetos semelhantes
+|                   ao primeiro são seguidos de objetos semelhantes ao segundo. Ou, em outros termos,
+|                   tal que, se o primeiro objeto não existisse, o segundo também não existiria.
+|                   O aparecimento de uma causa, sempre traz à mente, por uma transição costumeira,
+|                   a idéia de efeito. Disso também temos experiência. Podemos, assim, conforme essa
+|                   experiência, formular uma outra definição de causa que chamaríamos de um objeto
+|                   seguido de outro, e cuja aparição sempre conduz o pensamento a idéia desse outro objeto.(_Investigação sobre o Entendimento Humano_, séc. XVII)"^[Marcondes, Danilo. __Iniciação à Historia da Filosofia__. pg. 183.]
+
+#### O prof. Danilo Marcondes resume:
+
+|                   "Para Hume, portanto, a causalidade resulta apenas de uma regularidade ou repetição
+|                   em nossa experiência de uma conjunção constante entre fenômenos que,
+|                   por força do hábito, acabamos por projetar na realidade, tratando-a como se fosse algo
+|                   existente. É nesse sentido que pode ser dito que a causalidade é uma forma nossa de
+|                   perceber o real, uma ideia derivada da reflexão sobre as operações de nossa própria
+|                   mente,  e não uma conexão necessária entre causa é efeito, uma característica
+|                   do mundo natural."^[Marcondes, Danilo. __Iniciação à Historia da Filosofia__. pg. 183.]
+
+#### A ideia de causalidade é basilar na Ciência e na Filosofia, colocá-la em questão é suspeitar da possibilidade de conhecimento, revela radical ceticismo. A argumentação de Hume é de tal forma pertinente que [Kant](https://pt.wikipedia.org/wiki/Immanuel_Kant), em seu _Prolêgomenos_, afirmou que "a leitura de Hume despertou-me de meu sonho dogmático".
+
+#### Em suma, a ligação necessária entre fenômenos que denominamos causalidade é uma coisa da nossa cabeça. Desse modo, só nos resta a correlação e a crença infundada de regularidade para anestesiar nossas angústias.
+
+### __6. E daí?__
+
+#### Se você é um cientista e tem já em mente alguns candidatos a causa, ao analisar correlações, fique à vontade para encontrar a(s) causa(s) de um conjunto de fenômenos, não se desespere, o hábito de acreditarmos que existe causalidade é muito arraigado (está até em nossa gramática) talvez seja inglório lutar contra. Só peço que respeite o colega que está somente analisando correlações, e não fique dizendo a todo momento que 'correlação não é causalidade'. 
+
+#### Se você é um analista de dados e acha que encontrar correlações vale por si só, aos que o questionarem sobre a falta de causalidade, diga que o que não existe não falta. E, adicionalmente, sugira o estudo de _Investigação sobre o Entendimento Humano_ de David Hume, bem como _A Crítica da Razão Pura_ de Immanuel Kant, onde o filósofo alemão reuni os destroços da explosão causada^[Ops!] por David Hume.
+
+#### Caso seja um investidor ou alguém totalmente focado em resultados, sem vaidades especulativas, 
 
 
 
 
 
 
-###### Locke, em seu 'Ensaio acerca do entendimento humano' afirma “é de grande utilidade para o marinheiro saber a extensão de sua linha, embora não possa com ela sondar toda a profundidade do oceano. É conveniente que saiba que ela é suficientemente longa para alcançar o fundo dos lugares necessários para orientar sua viagem, e preveni-lo de esbarrar contra escolhos que podem destruí-lo. Não nos diz respeito conhecer todas as coisas, mas apenas as que se referem à nossa conduta. Se pudermos descobrir aquelas medidas por meio das quais uma criatura racional, posta nesta situação do homem no mundo, pode e deve dirigir suas opiniões e ações delas dependentes, não devemos nos molestar porque outras coisas escapam ao nosso conhecimento” 
 
 
-### __3. Alguns exemplos.__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### é basilar, pois do contrário deveríamos desistir de qualquer tipo de conhecimento, mas o conhecimento por indução não pode ser comparado em generalidade àqueles da Matemática quando mostra que num triângulo retângulo $a^2 = b + c^2$ (a soma dos quasrados dos catetos é igual ao quadrado da hipotenusa)  ou que $\sqrt{2}$ não pode ser escrito na forma $\frac{p}{q}$ para $p$ e $q$ inteiros. Em comparação com o conhecimento do tipo da Matemática a indução é problemática, pois sempre haverá a sombra da possibilidade de um contraexemplo que colocaria em questão o referido conhecimento.
+
+#### Freudianos x lacanianos; conteudistas x construtivistas; esquerdistas x direitistas
+
+#### Locke, em seu 'Ensaio acerca do entendimento humano' afirma “é de grande utilidade para o marinheiro saber a extensão de sua linha, embora não possa com ela sondar toda a profundidade do oceano. É conveniente que saiba que ela é suficientemente longa para alcançar o fundo dos lugares necessários para orientar sua viagem, e preveni-lo de esbarrar contra escolhos que podem destruí-lo. Não nos diz respeito conhecer todas as coisas, mas apenas as que se referem à nossa conduta. Se pudermos descobrir aquelas medidas por meio das quais uma criatura racional, posta nesta situação do homem no mundo, pode e deve dirigir suas opiniões e ações delas dependentes, não devemos nos molestar porque outras coisas escapam ao nosso conhecimento” 
+
+
+### __7. Alguns exemplos.__
 
 #### A relação entre os lados de um triângulo retângulo ($a^2 = b^2 + c^2$) pode ser obtida medindo-se diversos triângulos retângulos, mas os erros de medição e de identificação dos triângulos que são retângulos dificilmente nos dará esta relação. E com o agravante de não poder garantir que a igualdade servirá a todos triângulos retângulos. Só uma construção de acordo com as regras da razão pode ter tal generalidade. Entre o conjunto de dados retirado da experiência e a determinação sua causa existe um abismo, são procedimentos heterogêneos, descontínuos entre si.
 
 #### A musa inspiradora ([Helô Pinheiro](https://pt.wikipedia.org/wiki/Hel%C3%B4_Pinheiro)) de Tom Jobim e Vinícius de Morais e a música Garota de Ipanema são duas coisas absolutamente diversas. A música tem uma relação factual com a a garota, mas a Helô poderia passar repetidamente pelos autores sem haver a música ou outras moças poderiam inspirar a música que eternizou Ipanema. A separação entre a experiência e suas causas é a mesma entre a musa e o poema.
+
+#### Jonas a realidade objetiva deste princípio causal de fato deixa observarmos um exemplo famoso movimento das bolas de bilhar em uma mesa tudo o que vemos ao impacto do táxi sobre a primeira bola e por sua vez o impacto da primeira sobre a segunda mas há causalidade propriamente dita não pode ser observada tudo o que a experiência nos revela é uma conjunção constante entre fenômenos e não uma conexão necessária que chamamos de causalidade 
+
+
 
 #### 
 
