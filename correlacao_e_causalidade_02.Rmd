@@ -1,5 +1,5 @@
 ---
-title: "Correlação não é causalidade, e daí?"
+title: "Correlação não é causalidade, mas causalidade também não é correlação (e daí?)"
 author: ""
 date: ""
 output: 
@@ -19,15 +19,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Tenho visto em _lives_ ou em cursos de Estatística e Análise de Dados a afirmação de que 'correlação não é causalidade', como que indicando que algo falta à correlação, como se estivesse incompleta sem a causalidade. Não penso assim.
 
-#### Minha argumentação será no sentido de mostrar que um estudo de correlação não tem necessariamente que  identificar causas. Estudar a correlação entre variáveis e estabelecer as causas que as ligam são trabalhos diferentes, descontínuos entre si. Não devemos exigir que uma análise de correlação faça menção à causalidade, ou achar que é deficiente por não ter revelado ou encontrado causas.
+#### Minha argumentação será no sentido de mostrar que um estudo de correlação não tem necessariamente que  identificar causas. Estudar a correlação entre variáveis e estabelecer as causas que as ligam são trabalhos diferentes, heterogêneos. Não devemos exigir que uma análise de correlação faça menção à causalidade, ou achar que é deficiente por não ter revelado ou encontrado causas.
+
+#### Abordarei 3 pontos: _i_)Buscar causas é tarefa totalmente diferente de analisar correlações; _ii_)sob certa perspectiva é possível buscar correlações sem dar qualquer importância à causalidade; e, _iii_)a noção de causa e efeito, embora quase irresistível, não passa de m hábito sem fundamento.
 
 #### Toda discussão irá girar em torno do conhecimento por indução. Esta maneira de conceber o que é conhecimento foi adota pelos chamados filósofos empiristas. Como preparação vou expor em linhas gerais a teoria do conhecimento de pensadores considerados racionalistas, que não acreditavam que a experiência poderia levar ao conhecimento. 
 
 #### Vou usar o termo __causa__ como sinônimo de motivo, razão ou princípio, tal como no uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio.
 
-#### Adotarei como base de análise o livro "Iniciação à História da Filosofia" de Danilo Marcondes.^[Marcondes, Danilo. __Iniciação à Historia de Filosofia__. Rio de Janeiro: Jorge Zahar Ed., 1998.] 
-
-#### Noto por fim que não há qualquer pretensão acadêmica no presente ensaio.
+#### Adotarei como base de análise o excelente livro "Iniciação à História da Filosofia" de Danilo Marcondes.^[Marcondes, Danilo. __Iniciação à Historia de Filosofia__. Rio de Janeiro: Jorge Zahar Ed., 1998.] 
 
 ### __2. Conhecer para Platão, Aristóteles e Descartes.__
 
@@ -35,17 +35,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Conhecer cientificamente __$B$__ é saber inequivocamente tudo que causa __$B$__, seu porquê. Platão chama este tipo de conhecimento de [_episteme_](https://pt.wikipedia.org/wiki/Epistemologia). É o saber permanente contraposto à variabilidade das opinões que mudam na mesma medida que se alteram os objetos captados pelos sentidos. Estes nos afastam do conhecimento, só a razão isolada de todos os sentidos pode conhecer. 
 
-#### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), Platão explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias)  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). Para este filósofo a alma encarnada nada conhece de novo, apenas relembra uma coisa outra no mar do esquecimento [_lethe_](https://en.wikipedia.org/wiki/Lethe) em que vive. 
+#### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), Platão explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias),  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). Para este filósofo a alma encarnada nada conhece de novo, apenas relembra uma coisa ou outra no mar do esquecimento ([_lethe_](https://en.wikipedia.org/wiki/Lethe)) em que vive. 
 
 #### É impensável para Platão que o conhecimento tenha alguma relação com a análise de um conjunto de observaçãoes ou experimento. A valorização de Matemática em sua filosofia é em razão da distância que esta disciplina mantém em relação aos sentidos.
 
-#### Aristóteles entende que o que existe são as coisas individuais (não as formas ou essências em um mundo à parte como Platão), este cavalo, esta mesa.  E será o intelecto, por meio da abstração, que irá depreender a essência das coisas particulares, o que faz com que isto seja um cavalo e não uma mesa.
+#### Aristóteles entende que o que existe são as coisas individuais (não as formas ou essências em um mundo à parte como Platão), este cavalo, esta mesa.  E será o intelecto, por meio da abstração, que irá depreender a essência das coisas particulares, o que faz com que isto seja um cavalo seja um cavalo e não uma mesa. Para o Estagirita, o que causa este cavalo específico é a essência de cavalo que 'está' nele. 
 
-#### Para Aristóteles a experiência tem algum valor ("Nada está no intelecto sem antes ter passado pelos sentidos") no processo de conhecimento, mas é apenas uma referência, uma inspiração, o conhecimento é resultado do trabalho do intelecto. 
+#### Para Aristóteles a experiência tem algum valor ("Nada está no intelecto sem antes ter passado pelos sentidos") no processo de conhecimento, mas é apenas uma referência, uma inspiração, o conhecimento é resultado do trabalho do intelecto que, por abstração, alcança as essências. 
 
 #### Para [Descartes](https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes) conhecer __$B$__ é a impossibilidade de duvidar __racionalmente__ de __$B$__. 
 
-#### Segundo o filósofo francês, a razão (igualmente partilhada por todos) com suas operações, partindo princípios auto evidentes e os encadeando sem deixar espaço para dúvida em todas as etapas do raciocínio, conhece verdadeiramente tudo que causa __$B$__. Esta [forma de conhecer](https://pt.wikipedia.org/wiki/Discurso_sobre_o_M%C3%A9todo#Os_quatro_preceitos) foi inspirada na Matemática. 
+#### Segundo o filósofo francês, a razão (igualmente partilhada por todos) com suas operações, partindo princípios auto evidentes e os encadeando sem deixar espaço para dúvida em cada etapa do raciocínio, conhece verdadeiramente tudo que causa __$B$__. Esta [forma de conhecer](https://pt.wikipedia.org/wiki/Discurso_sobre_o_M%C3%A9todo#Os_quatro_preceitos) foi inspirada na Matemática. 
 
 |                   "...rejeitamos todos conhecimentos somente prováveis, e declaramos que se 
 |                   deve confiar apenas nas coisas perfeitamentes conhecidas e das quais 
@@ -58,18 +58,21 @@ knitr::opts_chunk$set(echo = TRUE)
 |                   as únicas que lidam com um objeto tão puro e simples que não têm de fazer 
 |                   suposição alguma que a experiência torne incerta..."^[Descartes, René. __Regras para a Direcção do Espírito (Regra II)__. Lisboa: Edições 70, s/d, pgs 14 a 17.]
 
-#### Para Descartes conhecer é conduzir a razão à moda da Matemática, isto é rejeitar o provável e as experiências enganosas, e considerar somente aquilo que é impossível duvidar.  
+#### Para Descartes conhecer é conduzir a razão à moda da Matemática, isto é rejeitar o provável e as experiências enganosas, e considerar somente aquilo que é impossível duvidar.
 
+#### A a experiência, um estudo de correlação, pode até __inspirar__ o intelecto do cientista a criar uma teoria que revelará uma relação de causalidade, tal como se diz que a queda da maçã levou [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton#A_queda_da_ma%C3%A7%C3%A3_e_a_d%C3%BAvida_de_Newton) a estabelecer a Teoria da Gravitação. Mas o que demonstra causas é tarefa exclusivamente racional de criação e articulação de conceitos. A [teoria](https://pt.wikipedia.org/wiki/Teoria), o encontro com as causas, não emerge naturalmente de uma coleção de experiências, tal como a radiografia de uma coxa mostra o fêmur.
 
->#### Quer estes filósofos considerem ou desprezem a experiência, é por meio da razão que se chega à causa, à explicação. É o intelecto que articula conceitos e princípios para reunir a diversidade das observações e dados sob uma mesma ordem.
+#### Desse modo quer se considere ou despreze a experiência, é por meio da razão que se chega à causa, à explicação. É o intelecto que articula conceitos e princípios para reunir a diversidade das observações e dados sob uma mesma ordem. Não há continuidade entre estas duas instâncias.
+
+>### Assim, correlação não é, nem precisa nem pode, ser causalidade, da mesma forma que sushi não é churrasco. 
 
 ### __3. O analista de dados é um empirista.__
 
 #### Quer um analista de dados reflita ou não sobre o tema do conhecimento, seu comportamento pressupõe uma determinada concepção sobre _o que é_ conhecer e _como_ se conhece. Considerando que a base de seu trabalho é coleta e análise de observações, ele é um empirista, uma vez que para esta corrente de pensamento a experiência é guia e critério de validade do conhecimento e a __indução__ o modo de obtê-lo.
 
-#### Não é possível vislumbrar um analista de dados tomando o conhecimento como reminiscência do que a alma '_viu_' no mundo das idéias, tal como Platão entendia. Nem como Descartes concebia, visto que toda medida contem um erro e as análises estatísticas são sempre da ordem do provável, nunca do indubitável. Um analista de dados que negasse o valor da experiência estaria pondo em questão a própria função que exerce.  
+#### Não é possível vislumbrar um analista de dados tomando o conhecimento como reminiscência do que a alma '_viu_' no mundo das idéias, tal como Platão entendia, nem como Descartes concebia, visto que toda medida contem um erro e as análises estatísticas são sempre da ordem do provável, nunca do indubitável. Um analista de dados que negasse o valor da experiência estaria pondo em questão a própria função que exerce.  
 
-#### Um estudo de correlação numa análise de dados é uma etapa de uma experiência. Coletam-se as observações, identificam-se as variáveis e estuda-se __quanto__ estas se correlacionam. A forma de se obter o grau de uma correlação é bastante engenhoso, mas é somente uma contagem, não é atividade especulativa ou teórica. Na medida em que sua fonte principal são observações, o analista de dados será sempre um empirista. 
+#### Um estudo de correlação numa análise de dados é uma etapa de uma experiência. Coletam-se as observações, identificam-se as variáveis e estuda-se __quanto__ estas se correlacionam. A forma de se obter o grau de uma correlação é bastante engenhoso, mas é medição e contagem, não é atividade especulativa ou teórica. Na medida em que sua fonte principal são as observações, o analista de dados será sempre um empirista. 
 
 
 ### __4. Empirismo.__
@@ -80,8 +83,6 @@ knitr::opts_chunk$set(echo = TRUE)
 |                   O termo é derivado do grego _empeiria_, significando basicamente uma forma 
 |                   de saber derivado da experiência sensível e de dados acumulados com base nessa
 |                   experiência, permitindo a realização de fins práticos."^[Marcondes, Danilo. __Iniciação à Historia de Filosofia__. pg. 176.]
-
-
 
 #### Para [Francis Bacon](https://en.wikipedia.org/wiki/Francis_Bacon) o conhecimento científico se processa pelo método indutivo. A partir de uma coleção de observações infere-se uma relação entre elas. Os fenômenos ocorridos num conjunto de observações são generalizados. Tal extrapolação pressupõe uma [uniformidade](https://en.wikipedia.org/wiki/David_Hume#Induction_and_causation) (Princípio da Uniformidade ou Semelhança ou Princípio da Uniformidade da Natureza) entre o que já foi observado e o que não foi. 
 
@@ -94,7 +95,7 @@ knitr::opts_chunk$set(echo = TRUE)
 |                  do observado para o não observado, ou para leis gerais, são conhecidas como
 |                  “inferências indutivas”. [O Problema da Indução](https://plato.stanford.edu/entries/induction-problem/#HumeProb).
 
-#### Este princípio que sustenta a indução é um problema. Adotá-lo significa usar algo sem fundamento: o que garante esta uniformidade? Por outro lado negá-lo impossibilita o próprio conhecimento, posto que as observações tornam-se um conjunto de casos aleatórios e desconexos. Assim, o empirismo vem sempre acompanhado de um nível de [ceticismo](https://en.wikipedia.org/wiki/Skepticism), seja ele moderado ou radical.
+#### Este princípio que sustenta a indução é um problema. Adotá-lo significa usar algo sem fundamento: o que garante esta uniformidade? Por outro lado negá-lo impossibilita o próprio conhecimento, posto que as observações tornar-se-iam um conjunto de casos aleatórios e desconexos. Assim, o empirismo vem sempre acompanhado de um nível de [ceticismo](https://en.wikipedia.org/wiki/Skepticism), seja ele moderado ou radical.
 
 #### O ceticismo em [John Locke](https://en.wikipedia.org/wiki/John_Locke) é moderado, pois admite o tipo de conhecimento dedutivo, tal como o da matemática, mas o obtido pela observação e experiência é relativo, chama de crença ou opinião.
 
@@ -104,11 +105,11 @@ knitr::opts_chunk$set(echo = TRUE)
 |                   O conhecimento demonstrativo é aquele derivado da nossa percepção da relação entre
 |                   nossas idéias, restringindo-se a campos do saber como a Geometria. Podemos 
 |                   assim ter um conhecimento demonstrativo ou dedutivo que não é derivado da experiência,
-|                   mas da observação do modo de operar da mente.Este conhecimento (_knowledge_)é certo e 
+|                   mas da observação do modo de operar da mente.Este conhecimento (_knowledge_) é certo e 
 |                   definitivo e se distingue do conhecimento derivado das percepções sensíveis que 
 |                   Locke de denomina "crença" ou "opinião" (_belief_) e que é relativa essa experiência."^[Marcondes, Danilo. __Iniciação à Historia da Filosofia__. pg. 181.]
 
-#### O ceticismo moderado de Locke tem um caráter antiespeculativo, prático, uma vez que não se detém diante do que não compreende. A tomada de decisão não pode esperar pelo completo conhecimento das causas, por uma teoria estabelecida. O filósofo observa: 
+#### A despeito de ser um emprista, Locke admite a relatividade do conhecimento oriundo dos sentidos e da experiência. Seu ceticismo moderado tem um caráter antiespeculativo, prático, uma vez que não se detém diante do que não compreende. A tomada de decisão não pode esperar pelo completo conhecimento verdadeiro das causas, por uma teoria estabelecida. O filósofo observa: 
 
 |                    "É de grande utilidade para o marinheiro saber a extensão de sua sonda, 
 |                    embora não possa com ela medir toda a profundidade do oceano. É conveniente que saiba
@@ -121,13 +122,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Suponhamos um analista de dados que pense como Locke e após seus estudos tivesse descoberto uma correlação de 90% entre __$A$__ e __$B$__, mas que não houvesse nada em __$A$__ que pudesse ser chamado de __causa__ de __$B$__. Ele lamentaria sua situação? Claro que não. É um percentual bastante alto, é o que temos hoje e encontrar a verdadeira causa de __$B$__ pode ser bastante demorado.
 
-#### _A contrario sensu_ imaginemos que um ganhador do Prêmio Nobel tenha descoberto que __$C$__ é a __causa__ de __$B$__, mas nosso analista observou que seu grau de correlaçao é de 70%, portanto menor que o entre __$A$__ e __$B$__(90%). Qual que usaria como fator de predição? Considerando que o referido analista segue a filosofia de Locke, que não tem veleidades metafísicas, usaria __$A$__.
+#### _A contrario sensu_ imaginemos que um ganhador do Prêmio Nobel tenha descoberto que __$C$__ é a __causa__ de __$B$__, mas nosso analista observou que seu grau de correlaçao é de 70%, portanto menor que o entre __$A$__ e __$B$__(90%). Qual usaria como fator de predição? Considerando que o referido analista segue a filosofia de Locke, que não tem veleidades metafísicas, usaria __$A$__.
 
-#### Por exemplo, se sou um investidor e observo uma correlação de 90% entre __$DCDD$__^[Dia em que estou com dor de dente.] e valorização de minha carteira e de 70% entre __$APDO$__^[Aumento da procura e diminuição da oferta.], posso sem qualquer problema de consciência optar por __$DCDD$__ para tomar decisões quanto a meus meus ativos^[Evidentemente um analista de mercado profissional, que administre o patrimônio de terceiros, jamais poderá dizer isso.] 
+#### Por exemplo, se sou um investidor e observo uma correlação de 90% entre __$DCDD$__^[Dia em que estou com dor de dente.] e valorização de minha carteira e de 70% entre __$APDO$__^[Aumento da procura e diminuição da oferta.], posso sem qualquer problema de consciência optar por __$DCDD$__ para tomar decisões quanto a meus meus ativos^[Evidentemente um analista de mercado profissional, que administre o patrimônio de terceiros, jamais poderá dizer isso.]. O objetivo prático de uma alta correlação entre variáveis desconsidera qualquer referência ou necessidade a alguma causa.   
 
-#### Temos que considerar que um dos contextos de uma análise de correlação é uma pesquisa científica e evidentemente se está em busca de causas. Antes de o cientista fazer um estudo ele tem em mente alguns candidatos a causa. Neste cenário ele não pode aceitar __$X$__ como causa se não tem a menor lógica, apenas porque tem uma alta correlação. Mas isto não significa que todo estudo de correlação terá que referir-se a uma causa.
 
-#### A a experiência pode até __inspirar__ o intelecto do cientista a criar uma teoria que revelará uma relação de causalidade, tal como se diz que a queda da maçã levou [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton#A_queda_da_ma%C3%A7%C3%A3_e_a_d%C3%BAvida_de_Newton) a estabelecer a Teoria da Gravitação. Mas o que demonstra causas é tarefa exclusivamente racional de criação e articulação de conceitos. Mesmo que seja um empirista, que toma a experiência como guia, a teoria, o encontro com as causas não emerge naturalmente de uma coleção de experiências, tal como uma radiografia mostra um osso.
 
 ### __5. Hume.__ 
 
@@ -171,14 +170,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Se você é um cientista e tem já em mente alguns candidatos a causa, ao analisar correlações, fique à vontade para encontrar a(s) causa(s) de um conjunto de fenômenos, não se desespere, o hábito de acreditarmos que existe causalidade é muito arraigado (está até em nossa gramática) talvez seja inglório lutar contra. Só peço que respeite o colega que está somente analisando correlações, e não fique dizendo a todo momento que 'correlação não é causalidade'. 
 
-#### Se você é um analista de dados e acha que encontrar correlações vale por si só, aos que o questionarem sobre a falta de causalidade, diga que o que não existe não falta. E, adicionalmente, sugira o estudo de _Investigação sobre o Entendimento Humano_ de David Hume, bem como _A Crítica da Razão Pura_ de Immanuel Kant, onde o filósofo alemão reuni os destroços da explosão causada^[Ops!] por David Hume.
+#### Se você é um analista de dados e acha que encontrar correlações vale por si só, aos que o questionarem sobre a falta de causalidade, diga que o que não existe não falta. E, adicionalmente, sugira o estudo de _Investigação sobre o Entendimento Humano_ de David Hume, bem como _A Crítica da Razão Pura_ de Immanuel Kant, onde o filósofo alemão reuni os destroços da explosão atômica causada^[Ops!] por David Hume.
 
 #### Caso seja um investidor ou alguém totalmente focado em resultados, sem vaidades especulativas, 
 
+#### [teoria](https://pt.wikipedia.org/wiki/Teoria)
+#### [theory](https://en.wikipedia.org/wiki/Theory)
 
 
+### __7 Correlação não é causalidade mas causalidade também não é correlação.__
 
+#### Temos que considerar que um dos contextos de uma análise de correlação é uma pesquisa científica e evidentemente se está em busca de causas. Antes de o cientista fazer um estudo de correlação ele tem em mente alguns candidatos a causa. Neste cenário ele não pode aceitar __$X$__ como causa algo não tem a menor lógica (tal como no exemplo de __$DCDD$__), apenas porque tem uma alta correlação. 
 
+#### Nesta situação o cientista tem algumas hipóteses a causa, e busca uma alta correlação para justificar seus argumentos, pois a experiência deve comprovar a teoria. Mas se o que ele tem são candidatos à causa, qual o fundamento para descartar as correlações 'sem a menor lógica'? 
+
+#### 
+
+#### Mas isto não significa que todo estudo de correlação terá que referir-se a uma causa.
 
 
 
@@ -207,7 +215,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #### Locke, em seu 'Ensaio acerca do entendimento humano' afirma “é de grande utilidade para o marinheiro saber a extensão de sua linha, embora não possa com ela sondar toda a profundidade do oceano. É conveniente que saiba que ela é suficientemente longa para alcançar o fundo dos lugares necessários para orientar sua viagem, e preveni-lo de esbarrar contra escolhos que podem destruí-lo. Não nos diz respeito conhecer todas as coisas, mas apenas as que se referem à nossa conduta. Se pudermos descobrir aquelas medidas por meio das quais uma criatura racional, posta nesta situação do homem no mundo, pode e deve dirigir suas opiniões e ações delas dependentes, não devemos nos molestar porque outras coisas escapam ao nosso conhecimento” 
 
 
-### __7. Alguns exemplos.__
+### __. Alguns exemplos.__
 
 #### A relação entre os lados de um triângulo retângulo ($a^2 = b^2 + c^2$) pode ser obtida medindo-se diversos triângulos retângulos, mas os erros de medição e de identificação dos triângulos que são retângulos dificilmente nos dará esta relação. E com o agravante de não poder garantir que a igualdade servirá a todos triângulos retângulos. Só uma construção de acordo com as regras da razão pode ter tal generalidade. Entre o conjunto de dados retirado da experiência e a determinação sua causa existe um abismo, são procedimentos heterogêneos, descontínuos entre si.
 
