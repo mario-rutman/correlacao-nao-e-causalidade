@@ -17,13 +17,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ## {.tabset .tabset-pills}
 ### __1. Objetivo.__
 
-#### Tenho visto em _lives_, em cursos de Estatística e de Análise de Dados a afirmação de que 'correlação não é causalidade', indicando que algo falta à correlação, como se estivesse incompleta sem a causalidade. Não penso assim. O fato de uma análise de correlação não ter revelado ou encontrado causas não a torna deficiente.
+#### Tenho visto em _lives_, em cursos de Estatística e de Análise de Dados a afirmação de que 'correlação não é causalidade', indicando que algo falta à correlação, como se estivesse incompleta sem a causalidade. Penso que o fato de uma análise de correlação não ter revelado ou encontrado causas não a torna deficiente.
 
-#### Minha argumentação será no sentido de mostrar que um estudo de correlação não tem necessariamente que  identificar ou referir-se à causalidade. Para defender meu entendimento abordarei 3 pontos: buscar causas é tarefa totalmente diferente de analisar correlações, são instâncias heterogêneas; sob certa perspectiva é possível buscar correlações sem dar qualquer importância à causalidade; e, a noção de causa e efeito, embora irresistível, não passa de um hábito sem fundamento.
+#### Minha argumentação será no sentido de mostrar que um estudo de correlação não tem necessariamente que  identificar ou referir-se à causalidade. Para defender meu entendimento abordarei três pontos: i) buscar causas é tarefa totalmente diferente de analisar correlações, são instâncias heterogêneas; ii) sob certa perspectiva é possível buscar correlações sem dar qualquer importância à causalidade; e, iii) a noção de causa e efeito, embora irresistível, não passa de um hábito sem fundamento.
 
-#### Para tratar do tema apresentarei resumidamente alguns conceitos filosóficos uteis.
+#### Para tratar do tema apresentarei resumidamente alguns conceitos filosóficos úteis.
 
-#### Toda discussão irá girar em torno do conhecimento por indução. Esta maneira de conceber o que é conhecimento foi adota pelos chamados filósofos empiristas. Como preparação vou expor em linhas gerais a teoria do conhecimento de pensadores considerados racionalistas, que não acreditavam que a experiência poderia levar ao conhecimento. 
+#### Toda a discussão irá girar em torno do conhecimento por indução. Esta maneira de conceber o que é conhecimento foi adota pelos chamados filósofos empiristas. Como preparação vou expor em linhas gerais a teoria do conhecimento de pensadores considerados racionalistas, que não acreditavam que a experiência poderia levar ao conhecimento. 
 
 #### Vou usar o termo __causa__ como sinônimo de motivo, razão ou princípio, tal como no uso diário de nossa língua. A causa de algo é sua razão, o seu motivo, seu porquê, o que a explica, sua origem e princípio.
 
@@ -37,7 +37,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Em linha com as ideias de morte e reencarnação do [Orfismo](https://pt.wikipedia.org/wiki/Orfismo_(culto)#Vida_ap%C3%B3s_a_morte), __Platão__ explica que a alma após a morte, sem as atribulações que o corpo demanda, no [mundo das ideias](https://pt.wikipedia.org/wiki/Teoria_das_ideias),  tudo conhece com os olhos do espírito ([_nous_](https://pt.wikipedia.org/wiki/Nous)). Para este filósofo a alma encarnada nada conhece de novo, apenas relembra uma coisa ou outra no mar do esquecimento ([_lethe_](https://en.wikipedia.org/wiki/Lethe)) em que vive. 
 
-#### É impensável para Platão que o conhecimento tenha alguma relação com a análise de um conjunto de observaçãoes ou experimento. A valorização de Matemática em sua filosofia é em razão de sue caráter abstrato, da distância que esta disciplina mantém em relação aos sentidos. 
+#### É impensável para Platão que o conhecimento tenha alguma relação com a análise de um conjunto de observaçãoes ou experimento. A valorização de Matemática em sua filosofia é em razão de seu caráter abstrato, da distância que esta disciplina mantém em relação aos sentidos. 
 
 #### __Aristóteles__ entende que o que existe são as coisas individuais (não as formas ou essências em um mundo à parte como Platão), este cavalo, esta mesa.  E será o intelecto, por meio da abstração, que irá depreender a essência das coisas particulares. São as essências que fazem algo ser o que é, e não outra coisa, o que faz com que isto seja um cavalo e não uma mesa. Para o Estagirita, o que causa este cavalo específico é a essência de cavalo que 'está' nele. 
 
@@ -58,25 +58,25 @@ knitr::opts_chunk$set(echo = TRUE)
 |                   as únicas que lidam com um objeto tão puro e simples que não têm de fazer 
 |                   suposição alguma que a experiência torne incerta..."^[Descartes, René. __Regras para a Direcção do Espírito (Regra II)__. Lisboa: Edições 70, s/d, pgs 14 a 17.]
 
-#### Segundo __Descartes__ conhecer é conduzir a razão à moda da Matemática, isto é rejeitar o provável e as experiências enganosas, e considerar somente aquilo que é impossível duvidar.
+#### Segundo __Descartes__ conhecer é conduzir a razão à moda da Matemática, isto é rejeitar o provável e as experiências enganosas, e considerar somente aquilo de que é impossível duvidar.
 
 #### Vemos assim que a produção do conhecimento, a determinação de causas, é tarefa intelectual, exercício da razão, não é decorrência de observações, medidas e cálculos.  
 
 #### A experiência, um estudo de correlação, pode até __inspirar__ o intelecto do cientista a criar uma teoria que revelará uma relação de causalidade, tal como se diz que a queda da maçã levou [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton#A_queda_da_ma%C3%A7%C3%A3_e_a_d%C3%BAvida_de_Newton) a estabelecer a Teoria da Gravitação. Mas o que demonstra causas é tarefa exclusivamente racional de criação e articulação de conceitos. A [teoria](https://pt.wikipedia.org/wiki/Teoria), o encontro com as causas, não emerge naturalmente de uma coleção de experiências, tal como a radiografia de uma coxa mostra o fêmur.
 
-#### Num estudo de correlação coletam-se as observações, identificam-se as variáveis e estuda-se __quanto__ estas se correlacionam. A forma de se obter o grau de uma correlação é bastante engenhosa, mas é medição e contagem, não é atividade especulativa ou teórica. Neste cenário, não há como surgir afirmação __fundamentada__de que __$A$__ causa __$B$__.
+#### Num estudo de correlação coletam-se as observações, identificam-se as variáveis e estuda-se __quanto__ estas se correlacionam. A forma de se obter o grau de uma correlação é bastante engenhosa, mas é medição e contagem, não é atividade especulativa ou teórica. Neste cenário, não há como surgir afirmação __fundamentada__ de que __$A$__ causa __$B$__.
 
 #### Assim, é por meio da razão que se chega à causa, à explicação. Só o intelecto articula conceitos, princípios e definições para reunir a diversidade das observações e dados sob uma mesma ordem, para então determinar causas. Apresentar causas e fazer correlações são trabalhos diferentes, especialidades distintas. 
 
 >#### Assim, correlação não é, nem pode, nem deve ser causalidade.
 
-#### __Obs.__ No cotidiano da produção científica, correlação e causalidade vêm confundidas, pois o cientista já tem em mente alguns candidatos à causa e se orienta pelas observações para adicionar outros, é a fase de colecionar hipóteses. O pesquisador pode __depois__, usando ferramentas para calcular a correlação entre variaveis, verificar quais hipóteses devem continuar sendo trabalhadas, para ao final, a(s) selecionada(s) se apresentar(em) como causa, é uma [conta de chegada](https://www.contabilidade-financeira.com/2007/04/conta-de-chegada.html), a causa não foi resultado da correlação. 
+#### __Obs.__ No cotidiano da produção científica, correlação e causalidade vêm confundidas, pois o cientista já tem em mente alguns candidatos à causa e se orienta pelas observações para adicionar outros, é a fase de colecionar hipóteses. O pesquisador pode __depois__, usando ferramentas para calcular a correlação entre variaveis, verificar quais hipóteses devem continuar sendo trabalhadas, para ao final, a(s) selecionada(s) se apresentar(em) como causa. Note que é uma [conta de chegada](https://www.contabilidade-financeira.com/2007/04/conta-de-chegada.html), na prática o cientista após idas e vindas, muitos erros, acertos na hora errada e equívocos oportunos apresenta uma explicação numa teoria, mas esta explicação não é produto da correlação.  
 
 ### __3. Causalidade: esse assunto não me interessa.__
 
 #### Quer um analista de dados reflita ou não sobre o tema do conhecimento, seu comportamento pressupõe uma determinada concepção sobre _o que é_ conhecer e _como_ se conhece. Considerando que a base de seu trabalho é coleta e análise de observações, ele é um __empirista__, uma vez que para esta corrente de pensamento a experiência é guia e critério de validade do conhecimento e a __indução__ o modo de obtê-lo.
 
-#### Não é possível apontar um analista de dados tomando o conhecimento como reminiscência do que a alma '_viu_' no mundo das idéias, tal como Platão entendia, nem como Descartes concebia, visto que toda medida contem um erro e as análises estatísticas são sempre da ordem do provável, nunca do indubitável. Um analista de dados que negasse o valor da experiência estaria pondo em questão a própria função que exerce.  
+#### Não é possível apontar um analista de dados tomando o conhecimento como reminiscência do que a alma '_viu_' no mundo das idéias, tal como Platão entendia, nem como Descartes concebia, visto que toda medida contém um erro e as análises estatísticas são sempre da ordem do provável, nunca do indubitável. Um analista de dados que negasse o valor da experiência estaria pondo em questão a própria função que exerce.  
 
 #### Um estudo de correlação numa análise de dados é uma etapa de uma experiência. Coletam-se as observações, identificam-se as variáveis e estuda-se __quanto__ estas se correlacionam. Assim, o analista de dados será sempre um empirista. Vejamos então com mais detalhe o que é o __empirismo__. 
 
@@ -127,9 +127,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### O 'homem no mundo' não pode esperar o conhecimento se completar para agir. Suponhamos um analista de dados que pense como __Locke__ e após seus estudos tivesse descoberto uma correlação de 90% entre __$A$__ e __$B$__, mas que não houvesse nada em __$A$__ que pudesse ser chamado de __causa__ de __$B$__. Ele lamentaria sua situação? Claro que não. É o que tem hoje e encontrar a verdadeira causa de __$B$__ pode ser bastante demorado. 
 
-#### A _contrario sensu_ imaginemos que um ganhador do Prêmio Nobel tenha descoberto que __$C$__ é a __causa__ de __$B$__, mas nosso analista observou que seu grau de correlaçao é de 70%, portanto menor que o entre __$A$__ e __$B$__(90%). Qual usaria para fazer prognósticos? Considerando que o referido analista segue a filosofia de _Locke_, que não tem veleidades metafísicas, usaria __$A$__.
+#### A _contrario sensu_, imaginemos que um ganhador do Prêmio Nobel tenha descoberto que __$C$__ é a __causa__ de __$B$__, mas nosso analista observou que seu grau de correlaçao é de 70%, portanto menor que o entre __$A$__ e __$B$__ (90%). Qual usaria para fazer prognósticos? Considerando que o referido analista segue a filosofia de _Locke_, que não tem veleidades metafísicas, usaria __$A$__.
 
-#### Se um investidor observa uma correlação de 90% entre __$DCDD$__^['dia em que está com dor de dente'] e a valorização de seus ativos naquele dia e de 70% entre __$APDO$__^['aumento da procura e diminuição da oferta'] com o mesmo resultado, ele poderá sem qualquer problema de consciência optar por __$DCDD$__ para tomar decisões quanto a seus ativos^[Evidentemente um analista de mercado profissional, que administre o patrimônio de terceiros, jamais poderá dizer isso.]. O objetivo prático de uma alta correlação entre variáveis desconsidera qualquer necessidade ou referência a alguma causa.
+#### Se um investidor observa uma correlação de 90% entre __$DCDD$__ ('dia em que está com dor de dente') e a valorização de seus ativos naquele dia é de 70% entre __$APDO$__ ('aumento da procura e diminuição da oferta') com o mesmo resultado, ele poderá sem qualquer problema de consciência optar por __$DCDD$__ para tomar decisões quanto a seus ativos^[Evidentemente um analista de mercado profissional, que administre o patrimônio de terceiros, jamais poderá dizer isso.]. O objetivo prático de uma alta correlação entre variáveis desconsidera qualquer necessidade ou referência a alguma causa.
 
 #### Pelos motivos acima, se um tal analista de dados fosse questionado quanto ao fato de que 'correlação não é causalidade', diria que não vê importância nem tem interesse no tema. 
 
@@ -145,7 +145,7 @@ knitr::opts_chunk$set(echo = TRUE)
 |                   a experiência nos revela é uma conjunção constante entre fenômenos,
 |                   e não uma conexão necessária que chamamos de causalidade."^[Ibd. pg. 182.]
 
-#### O filósofo escocês considera a causalidade um ilusão, uma força do hábito que adquirimos ao ver repetidamente grupo coisas semelhantes seguidas por outro grupo de coisas semelhantes, que nada mais é que correlação. A relação de causa e efeito não está na natureza, nas coisas nem na razão, é apenas repetida conjugação de fenômenos.
+#### O filósofo escocês considera a causalidade uma ilusão, uma força do hábito que adquirimos ao ver repetidamente grupos coisas semelhantes seguidas por outros grupos de coisas semelhantes, que nada mais é que correlação. A relação de causa e efeito não está na natureza, nas coisas nem na razão, é apenas repetida conjugação de fenômenos.
 
 |                   "Objetos semelhantes sempre se encontram em conexão com objetos semelhantes.
 |                   Disso temos experiência. De acordo com essa experiência podemos definir uma
@@ -171,13 +171,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### A ligação necessária entre fenômenos que denominamos causalidade é uma ficção mental. Observamos grupos de repetições e inferimos que esta relgularidade vem dos objetos que compõem estes grupos. Isso que chamamos de causalidade é uma mania de nossa _psiquê_.
 
+#### Não existindo causalidade no sentido de ligação necessária, o que temos de objetivo, que é produto da experiência, é a correlação. Desse modo, não apenas não falta causalidade à correlação, como é o __máximo__ que se tem quando se deseja relacionar conjuntos de variáveis.
+
+#### Para um analista de dados que adote a visão de mundo de Hume só existem correlações que acertam muitas previsões ou erram muitas, fortes ou fracas, esclarecedoras ou desorientadoras, que ele queira ou não 'apostar suas fichas'. Não há qualquer causa subjacente que ordene a relação entre as observações.
+
 ### __5. Conclusão.__
 
-#### Se você é um cientista de dados e sua investigação de correlação foi questionada por não ser 'causalidade', pode responder que admira o trabalho especulativo-científico, mas que seu trabalho é encontrar padrões sem fazer inferências sobre seu estatuto metafísico.
+#### Se você é um cientista de dados e sua investigação de correlação foi questionada por não ser 'causalidade', pode responder que admira o trabalho especulativo-científico, mas que sua tarefa é encontrar padrões sem fazer inferências sobre seu estatuto metafísico.
 
-#### Pode refutá-lo afirmando que não tem qualquer interesse no assunto 'causalidade', que é 'um homem no mundo', que não pode esperar o conhecimento das causas para decidir, que troca sem pesar o conhecimento das profundezas do oceano pela certeza que seu navio não será destruído pelos arrecifes.
+#### Pode refutá-lo, afirmando que não tem qualquer interesse no assunto 'causalidade', que é 'um homem no mundo', que não pode esperar o conhecimento das causas para decidir, que troca sem pesar o conhecimento das profundezas do oceano pela certeza de que seu navio não será destruído pelos arrecifes.
 
-#### Sugeriria, para não ferir suscetibilidades, com muito tato, objetá-lo que 'causalidade' é apenas um costume, um vício, e como tal deve ser evitado.
+#### Sugeriria ainda, dizer a quem o interpela que 'causalidade' é apenas um costume, um hábito irresistível. Lembrando que nada está por baixo de uma correlação a controlá-la, a grenciá-la. 
 
-#### Por fim, ofereça um café a quem veio indagá-lo sobre faltar 'causalidade' em sua correlação e diga que sabia que ele viria tratar do tema, pois sua pesquisa indicou que há forte correlação entre as variáveis __$MUC$__^['mostrar uma correlação'] e __$AADCNC$__^['aparecer alguém dizendo que correlação não é causalidade'].
+#### Por fim, ofereça um café a quem veio indagá-lo sobre faltar 'causalidade' em sua correlação e diga que sabia que viria tratar do tema, pois sua pesquisa indicou que há forte correlação entre as variáveis __$MUC$__ ('mostrar uma correlação') e __$AADCNC$__ ('aparecer alguém dizendo que correlação não é causalidade').
 
