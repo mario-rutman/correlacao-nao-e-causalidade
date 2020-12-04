@@ -129,7 +129,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### A _contrario sensu_, imaginemos que um ganhador do Prêmio Nobel tenha descoberto que __$C$__ é a __causa__ de __$B$__, mas nosso analista observou que seu grau de correlaçao é de 70%, portanto menor que o entre __$A$__ e __$B$__ (90%). Qual usaria para fazer prognósticos? Considerando que o referido analista segue a filosofia de _Locke_, que não tem veleidades metafísicas, usaria __$A$__.
 
-#### Se um investidor observa uma correlação de 90% entre __$DCDD$__ ('dia em que está com dor de dente') e a valorização de seus ativos naquele dia é de 70% entre __$APDO$__ ('aumento da procura e diminuição da oferta') com o mesmo resultado, ele poderá sem qualquer problema de consciência optar por __$DCDD$__ para tomar decisões quanto a seus ativos^[Evidentemente um analista de mercado profissional, que administre o patrimônio de terceiros, jamais poderá dizer isso.]. O objetivo prático de uma alta correlação entre variáveis desconsidera qualquer necessidade ou referência a alguma causa.
+#### Se um investidor observa uma correlação de 90% entre __$DCDD$__ ('dia em que está com dor de dente') e a valorização de seus ativos, e uma de 70% entre __$APDO$__ ('aumento da procura e diminuição da oferta') e a referida valorização, ele poderá sem qualquer problema de consciência optar por __$DCDD$__ para tomar decisões quanto a sua carteira de investimentos^[Evidentemente um analista de mercado profissional, que administre o patrimônio de terceiros, jamais poderá dizer isso.]. O objetivo prático de uma alta correlação entre variáveis desconsidera qualquer necessidade ou referência a alguma causa, o que está em questão é ter melhores preditores.
 
 #### Pelos motivos acima, se um tal analista de dados fosse questionado quanto ao fato de que 'correlação não é causalidade', diria que não vê importância nem tem interesse no tema. 
 
@@ -181,7 +181,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Pode refutá-lo, afirmando que não tem qualquer interesse no assunto 'causalidade', que é 'um homem no mundo', que não pode esperar o conhecimento das causas para decidir, que troca sem pesar o conhecimento das profundezas do oceano pela certeza de que seu navio não será destruído pelos arrecifes.
 
-#### Sugeriria ainda, dizer a quem o interpela que 'causalidade' é apenas um costume, um hábito irresistível. Lembrando que nada está por baixo de uma correlação a controlá-la, a grenciá-la. 
+#### Sugeriria ainda, dizer a quem o interpela que 'causalidade' é apenas um costume, um hábito irresistível. Lembrando que nada está por baixo de uma correlação a controlá-la, nenhum gerenciador trabalhando. 
 
 #### Por fim, ofereça um café a quem veio indagá-lo sobre faltar 'causalidade' em sua correlação e diga que sabia que viria tratar do tema, pois sua pesquisa indicou que há forte correlação entre as variáveis __$MUC$__ ('mostrar uma correlação') e __$AADCNC$__ ('aparecer alguém dizendo que correlação não é causalidade').
 
